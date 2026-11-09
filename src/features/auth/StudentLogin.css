@@ -1,0 +1,197 @@
+
+.student-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background: #f8f7fc;
+}
+
+.student-login-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.back-button {
+  border: none;
+  background: none;
+  color: #666;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.account-choice-list {
+  display: grid;
+  gap: 12px;
+}
+
+.account-choice-button {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.account-choice-button:hover,
+.account-choice-button:focus-visible {
+  border-color: #8055c7;
+  outline: none;
+  box-shadow: 0 0 0 2px #8055c720;
+}
+
+.account-choice-title {
+  color: #24203a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.account-choice-description {
+  color: #777;
+  font-size: 14px;
+}
+
+.login-header {
+  margin-bottom: 28px;
+}
+
+.login-header h1 {
+  font-size: 28px;
+  color: #24203a;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: #777;
+  line-height: 1.6;
+}
+
+.login-mode-selector {
+  display: flex;
+  gap: 8px;
+  padding: 5px;
+  background: #f2f0f8;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.login-mode-selector button {
+  flex: 1;
+  padding: 12px 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  color: #666;
+}
+
+.login-mode-selector button.active {
+  background: white;
+  color: #6c45b8;
+  font-weight: 600;
+  box-shadow: 0 2px 5px #00000010;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #8055c7;
+  box-shadow: 0 0 0 2px #8055c720;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.password-input input {
+  border: none;
+  box-shadow: none;
+}
+
+.password-input button {
+  border: none;
+  background: none;
+  color: #8055c7;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.forgot-password a {
+  color: #8055c7;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: #8055c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #6941ac;
+}
+
+.login-help {
+  margin-top: 24px;
+  padding: 14px;
+  background: #f8f6fc;
+  color: #777;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .student-login-card {
+    padding: 22px;
+  }
+
+  .login-header h1 {
+    font-size: 24px;
+  }
+}
